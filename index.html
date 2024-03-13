@@ -1,0 +1,217 @@
+
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Audio samples</title>
+  <meta charset="UTF-8">
+  <title>Improving Multilingual Text-to-Speech with Mixture-of-Language-Experts and Accent Disentanglement</title>
+  <style>
+      red {color: red}
+      audio {width: 250px}
+  </style>
+  <style>
+      .text1 {
+        color: gray;
+        font-style: italic;
+        font-size: 16;
+        line-height: 1.5;
+      }
+    </style>
+</head>
+<body>
+  <article>
+    <header>
+      <h1>Audio samples</h1>
+    </header>
+  </article>
+
+  <div style="line-height: 1.5; font-size: 18px;">
+      <h2>Title:</h2>
+      Improving Multilingual Text-to-Speech with Mixture-of-Language-Experts and Accent Disentanglement
+  <p></p>
+  </div>
+
+  <div style="line-height: 1.5; font-size: 18px;">
+    <h2>Abstract:</h2>
+    Code-switching and accent control is particularly valuable in multilingual text-to-speech (TTS) systems as both of them contribute to improving the authenticity and comprehensibility.
+    However, the issues of seamless integration of languages within a single utterance and the thorough disentanglement of different attributes without bilingual data remains to be solved.
+    To conquer these problems, a computation-efficient model is proposed in this paper.
+    Firstly, the Mixture of Language Experts (MoLE) module is introduced as the encoder to extract language-specific features and fuse intra-utterance semantic information.
+    Secondly, embedding methods together with several regularization strategies and speaker consistency constraints are utilized to ensure that the generated speech aligns with the desired accent.
+    Experiments show that the proposed model can improve the performance of code-switching accent-controllable multilingual TTS over the baseline model in terms of fluency and naturalness.
+    <p></p>
+  </div>
+
+  <h2>Contents:</h2>
+  <div id="toc_container" style="line-height: 1.5; font-size: 18px;">
+  <ul>
+    <li><a href="#ac">Accent Control</a></li>
+    <li><a href="#cs">Code-switching</a></li>
+  </ul>
+  </div>
+
+  <br><br>
+
+  <div style="line-height: 1.5; font-size: 18px;">
+    <a name="ac"><h2>Accent Control</h2></a>
+    <hr>
+    <ul>
+      <li><h3>The speakers in the following samples have synthesized speech in their native languages.</h3></li>
+    </ul>
+    <table>
+          <thead>
+              <tr>
+              <th style="line-height: 1.5; font-size: 18px;">Ground Truth</th><th style="line-height: 1.5; font-size: 18px;"> Accent ID = English</th><th style="line-height: 1.5; font-size: 18px;"> Accent ID = Mandarin</th>
+              </tr>
+          </thead>
+      <tbody>
+      <tr>
+          <td colspan="3" class="text1">English Speaker 1, Male, Text: However, the figures were disputed by the Scottish Prison Service.</Textarea></Textarea></td>
+      </tr>
+      <tr>
+        <td><audio controls="" preload="none"><source src="audios/ac/gt/p258_171.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/ac/en/p258_171.wav"></audio></td>           
+        <td><audio controls="" preload="none"><source src="audios/ac/zh/p258_171.wav"></audio></td>
+      </tr>
+      <tr>
+          <td colspan="3" class="text1">English Speaker 2, Female, Text: We have not had a formal request.</td>
+      </tr>
+      <tr>
+        <td><audio controls="" preload="none"><source src="audios/ac/gt/p313_44.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/ac/en/p313_44.wav"></audio></td>           
+        <td><audio controls="" preload="none"><source src="audios/ac/zh/p313_44.wav"></audio></td>
+      </tr>
+      <tr>
+          <td colspan="3" class="text1">Mandarin Speaker 1, Male, Text: 七百八十三万二千七百零七。</Textarea></Textarea></td>
+      </tr>
+      <tr> 
+        <td><audio controls="" preload="none"><source src="audios/ac/gt/SSB0073_87.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/ac/en/SSB0073_87.wav"></audio></td>           
+        <td><audio controls="" preload="none"><source src="audios/ac/zh/SSB0073_87.wav"></audio></td>
+      </tr>
+      <tr>
+          <td colspan="3" class="text1">Mandarin Speaker 2, Female, Text: 在这块擂台上没有弱者。</td>
+      </tr>
+      <tr>
+        <td><audio controls="" preload="none"><source src="audios/ac/gt/SSB0133_48.wav"></audio></td>
+        <td><audio controls="" preload="none"><source src="audios/ac/en/SSB0133_48.wav"></audio></td>           
+        <td><audio controls="" preload="none"><source src="audios/ac/zh/SSB0133_48.wav"></audio></td>
+      </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li><h3>The speakers in the following samples have synthesized speech in a non-native language.</h3></li>
+    </ul>
+    <table>
+      <thead>
+          <tr>
+          <th style="line-height: 1.5; font-size: 18px;">Reference Speaker</th><th style="line-height: 1.5; font-size: 18px;"> Accent ID = English</th><th style="line-height: 1.5; font-size: 18px;"> Accent ID = Mandarin</th>
+          </tr>
+      </thead>
+  <tbody>
+  <tr>
+      <td colspan="3" class="text1">English Speaker 3, Male, Text: 我们是从谈论你的梦开始的。</Textarea></Textarea></td>
+  </tr>
+  <tr>
+    <td><audio controls="" preload="none"><source src="audios/ac/gt/p302_84.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/ac/en/p302_84.wav"></audio></td>           
+    <td><audio controls="" preload="none"><source src="audios/ac/zh/p302_84.wav"></audio></td>
+  </tr>
+  <tr>
+      <td colspan="3" class="text1">English Speaker 4, Female, Text: 拉姆桑国王的皇宫保住了。</td>
+  </tr>
+  <tr>
+    <td><audio controls="" preload="none"><source src="audios/ac/gt/p280_14.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/ac/en/p280_14.wav"></audio></td>           
+    <td><audio controls="" preload="none"><source src="audios/ac/zh/p280_14.wav"></audio></td>
+  </tr>
+  <tr>
+      <td colspan="3" class="text1">Mandarin Speaker 3, Male, Text: They would love to do more films.</Textarea></Textarea></td>
+  </tr>
+  <tr> 
+    <td><audio controls="" preload="none"><source src="audios/ac/gt/SSB1448_87.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/ac/en/SSB1448_87.wav"></audio></td>           
+    <td><audio controls="" preload="none"><source src="audios/ac/zh/SSB1448_87.wav"></audio></td>
+  </tr>
+  <tr>
+      <td colspan="3" class="text1">Mandarin Speaker 4, Female, Text: The goals were good.</td>
+  </tr>
+  <tr>
+    <td><audio controls="" preload="none"><source src="audios/ac/gt/SSB0935_17.wav"></audio></td>
+    <td><audio controls="" preload="none"><source src="audios/ac/en/SSB0935_17.wav"></audio></td>           
+    <td><audio controls="" preload="none"><source src="audios/ac/zh/SSB0935_17.wav"></audio></td>
+  </tr>
+  </tbody>
+    </table>
+    <hr>     
+  </div>
+  <br><br>
+  <div style="line-height: 1.5; font-size: 18px;">
+    <a name="cs"><h2>Code-switching</h2></a>
+    <hr>
+    <ul>
+      <li><h3>The followings are code-switching sentences synthesized by a native Mandarin speaker. The samples synthesized from the baseline, denoted as VITS2. The samples synthesized from the proposed methods, denoted as Proposed Model, VITS2+MoLE+SCL, and VITS2+MoLE respectively.</h3></li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+            <th style="line-height: 1.5; font-size: 18px;">Ground Truth</th><th style="line-height: 1.5; font-size: 18px;">Proposed Model</th><th style="line-height: 1.5; font-size: 18px;">VITS2+MoLE+SCL</th><th style="line-height: 1.5; font-size: 18px;">VITS2+MoLE</th><th style="line-height: 1.5; font-size: 18px;">VITS2</th>
+            </tr>
+          </thead>
+      <tbody>
+        <tr>
+            <td colspan="3" class="text1">Text: 但是写字楼里的Vivian和George却有无限可能。</td>
+        </tr>
+        <tr>
+            <td><audio controls="" preload="none"><source src="audios/cs/0/201461.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/4/201461.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/3/201461.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/2/201461.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/1/201461.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text1">Text: Boss中国宣布邀请霍建华担任bossman。</td>
+        </tr>
+        <tr>
+            <td><audio controls="" preload="none"><source src="audios/cs/0/200350.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/4/200350.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/3/200350.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/2/200350.wav"></audio></td>          
+            <td><audio controls="" preload="none"><source src="audios/cs/1/200350.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text1">Text: 附近空无一人，偶有车辆pass slowly。</td>
+        </tr>
+        <tr>
+            <td><audio controls="" preload="none"><source src="audios/cs/0/201659.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/4/201659.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/3/201659.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/2/201659.wav"></audio></td>          
+            <td><audio controls="" preload="none"><source src="audios/cs/1/201659.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text1">Text: Lobby门外有cheers便利超市、租车服务。</td>
+        </tr>
+        <tr>
+            <td><audio controls="" preload="none"><source src="audios/cs/0/200741.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/4/200741.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/3/200741.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/2/200741.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/1/200741.wav"></audio></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="text1">Text: Toner使用感较清爽，lotion较浓稠。</td>
+        </tr>
+        <tr>
+            <td><audio controls="" preload="none"><source src="audios/cs/0/201050.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/4/201050.wav"></audio></td>
+            <td><audio controls="" preload="none"><source src="audios/cs/3/201050.wav"></audio></td>           
+            <td><audio controls="" preload="none"><source src="audios/cs/2/201050.wav"></audio></td>         
+            <td><audio controls="" preload="none"><source src="audios/cs/1/201050.wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>     
+  </div>
+
+<br><br>
+</body></html>
